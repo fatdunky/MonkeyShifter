@@ -3,9 +3,9 @@ Created on 20Nov.,2016
 
 @author: fatdunky
 '''
-from lines.word import Word
-import re, logging
-from lines.wordcategories.unmatched_word_category import UnmatchedWordCategory
+from wordcategories.word import Word
+import re
+from wordcategories.unmatched_word_category import UnmatchedWordCategory
 
 class Line(object):
     '''
@@ -63,7 +63,7 @@ class Line(object):
         '''
         Return the string right of the . 
         '''
-        strings = self.__origional_line.split(".")
+        #strings = self.__origional_line.split(".")
         return self.__origional_line[self.__origional_line.rfind(".")+1:]
 
     def get_line_with_out_filename(self):

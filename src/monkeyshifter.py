@@ -7,36 +7,34 @@ Created on 3Dec.,2016
 '''
 
 import os, sys, getopt, logging, random
-from lines.utilites.logger import Logger
+from utilites.logger import Logger
 from configuration import Configuration 
-from lines.utilites.constants import Constants
-from lines.utilites.word_category_cmd import WordCategoryCmd
-from lines.utilites.io import Io
+from cmd_line.word_category_cmd import WordCategoryCmd
+from utilites.io import *
 from lines.line import Line
-from types import NoneType
-from lines.media import Media
-from lines.wordcategories.word_category import WordCategory
-from lines.wordcategories.unmatched_word_category import UnmatchedWordCategory
+from mediatypes.media import Media
+from wordcategories.word_category import WordCategory
+from wordcategories.unmatched_word_category import UnmatchedWordCategory
 
 
 def print_help():
-    print 'Usage: monkeyshifter.py [OPTION]... [TARGET DIRECTORY]...'
-    print 'MonkeyShifter will clean up movie and tv show avi names.'
-    print 'It will also move the files into their proper directories'
-    print '\n'
-    print 'Options:'
-    print '-h, -?, --help                            Show this output.'
-    print '-c <file>, --configFile <file>            Configuration File'
-    print '-d <directory>, --configDirectory <file>  Configuration File Directory'
-    print '-t, --tuning                              Turn on tuning mode. In the mode the MonkeyShifter will only add words to words lists'
-    print '                                          the application will not rename or move files into directories '
-    print '-v, --debug, --verbose                    Turn on verbose mode'
-    print '-i <file>, --logDirectory <file>          Use the following directory for the log file'
-    print '-l <file>, --logFile <file>               Log to the specified log file'
-    print '-e, --logLevel                            Set logging level'
-    print '-s <file>, --test <file>                  Turn on test mode. No changes will be made to filenames, no files will be moved.'
-    print '-x, --console                             Log to console rather then log file'
-    print '\n'
+    print('Usage: monkeyshifter.py [OPTION]... [TARGET DIRECTORY]...')
+    print('MonkeyShifter will clean up movie and tv show avi names.')
+    print('It will also move the files into their proper directories')
+    print('\n')
+    print('Options:')
+    print('-h, -?, --help                            Show this output.')
+    print('-c <file>, --configFile <file>            Configuration File')
+    print('-d <directory>, --configDirectory <file>  Configuration File Directory')
+    print('-t, --tuning                              Turn on tuning mode. In the mode the MonkeyShifter will only add words to words lists')
+    print('                                          the application will not rename or move files into directories ')
+    print('-v, --debug, --verbose                    Turn on verbose mode')
+    print('-i <file>, --logDirectory <file>          Use the following directory for the log file')
+    print('-l <file>, --logFile <file>               Log to the specified log file')
+    print('-e, --logLevel                            Set logging level')
+    print('-s <file>, --test <file>                  Turn on test mode. No changes will be made to filenames, no files will be moved.')
+    print('-x, --console                             Log to console rather then log file')
+    print('\n')
 
 def setup_configuration(config_directory,config_file):
     '''
@@ -93,7 +91,7 @@ def create_media_object(line, delimeters, directory, test_mode):
 
 def load_word_files(config, word_files):   
     logging.info("Load word files")
-    for word_file_name in config.get_word_file_names().values():
+    for word_file_name in list(config.get_word_file_names().values()):
         logging.debug("Loading %s",word_file_name)
         class_string = "lines.wordcategories." + config.get_word_file_module_name(word_file_name) + "." + config.get_word_file_file_class(word_file_name)
         logging.debug("Loading %s",word_file_name)
@@ -158,7 +156,7 @@ def load_media_sub_types(config, media_type_name, media_sub_types):
 
 def load_media_types(config, media_types):
     logging.info("Load media_types")
-    for media_type_name in config.get_media_type_names().values():
+    for media_type_name in list(config.get_media_type_names().values()):
         load_media_type_class(config, media_type_name,media_types)
         load_media_sub_types(config, media_type_name,media_types)
     return media_types
@@ -184,6 +182,8 @@ def main(argv):
     tuning_mode = False
     verbose_mode = False
     
+    base_dir = os.
+    
     log_file=''
     log_directory=''
     log_level= "DEBUG"
@@ -191,7 +191,7 @@ def main(argv):
     test_mode = False
     test_file = ''
     console_mode = False
-    config = NoneType
+    config = None
     
     word_files = {}
     words = {}
@@ -204,6 +204,11 @@ def main(argv):
     target_directory = ""
     
     unmatched_words_map = {}
+    
+    base_folder = os.path.abspath(os.path.dirname(__file__))
+    
+    DEFAULT_CONIF_DIR = os.path.abspath()
+    
     
     '''
     Handle command line arguments
@@ -249,7 +254,7 @@ def main(argv):
         target_directory = os.getcwd()
     
 
-    config = setup_configuration(config_directory,config_file)
+    config = setup_configuration(config_directory,config_file, DEFAULT_CONFIG_DIR, DEFAULT_CONFIG_FILE)
     if (config_directory == ""): config_directory = config.get_config_directory()
     if (data_directory == ""): data_directory = config.get_data_directory()
     if (log_directory == ""): log_directory = config.get_log_directory()
@@ -266,7 +271,8 @@ def main(argv):
     
     #load media types
     media_types = load_media_types(config, media_types)
-        
+    
+    
         
     if (test_mode and test_file != ""):
         logging.info("Load test list of file names from %s",test_file)
@@ -295,7 +301,7 @@ def main(argv):
             
     #logging.debug("done, newMatchedwords=[%s]",unmatched_words_map)       
     
-    for key, list in unmatched_words_map.items():
+    for key, list in list(unmatched_words_map.items()):
         #logging.debug("Word word [%s], list [%s]", key, list)
         for word in list:
             logging.debug("Adding [%s] to word list %s", word.get_text(),word.get_category().get_config_name())
@@ -304,7 +310,7 @@ def main(argv):
             #existing_list.append(word.get_text)
             
     logging.debug("%s", word_files)
-    for word_category_name, word_category in word_files.items():
+    for word_category_name, word_category in list(word_files.items()):
         logging.debug("%s wordCat [%s]", word_category ,word_category_name)
 
         

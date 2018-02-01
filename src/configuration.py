@@ -3,9 +3,8 @@ Created on 19Feb.,2017
 
 @author: fatdunky
 '''
-import ConfigParser, logging, os
-from lines.utilites.configuration_parser import ConfigurationParser
-from types import NoneType
+import configparser, logging, os
+from utilites.configuration_parser import ConfigurationParser
 
 class Configuration(ConfigurationParser):
     '''
@@ -45,13 +44,13 @@ class Configuration(ConfigurationParser):
     LOGGING_FILE='logging_file'
     
     
-    def __init__(self, config_directory, config_file):
+    def __init__(self, config_directory, config_file, default_config_directory, default_config_file):
         '''
         Constructor
         '''    
         #self._config = ConfigParser.ConfigParser()
         #get config sections
-        super(Configuration, self).__init__()
+        super(Configuration, self).__init__(default_config_directory,default_config_file)
         self.set_config_directory(config_directory)
         self.read_config(config_file)
         self.__config_file = dict(self.config.items(Configuration.SECTION_NAME_CONFIG_FILE))
@@ -64,13 +63,13 @@ class Configuration(ConfigurationParser):
         
         #get variable config sections - word files
         self.__word_files = {}
-        for word_file_name in self.__word_file_names.values():
+        for word_file_name in list(self.__word_file_names.values()):
             self.__word_files[word_file_name] = self.config.items(word_file_name)
         
         #get variable config sections - media types
         self.__media_types = {}
         self.__media_sub_types = {"":[]}
-        for media_type_name in self.__media_type_names.values():
+        for media_type_name in list(self.__media_type_names.values()):
             self.__media_types[media_type_name] = self.config.items(media_type_name)  
             sub_types = self.get_media_type_subtypes(media_type_name)
             sub_types_dict = {}
@@ -87,7 +86,7 @@ class Configuration(ConfigurationParser):
         return self.__file_name[self.ITEM_FILE_NAME_DELIMITERS]
     
     def get_media_type_subtypes(self, media_type):
-        if (self.__media_types.has_key(media_type)):
+        if (media_type in self.__media_types):
             media_types_items = dict(self.__media_types[media_type])
             return_value = media_types_items[self.ITEM_MEDIA_TYPES_SUBTYPES]
             return return_value.split(self.get_config_file_delimiter())
@@ -95,7 +94,7 @@ class Configuration(ConfigurationParser):
             return []
     
     def get_media_type_extensions(self, media_type):
-        if (self.__media_types.has_key(media_type)):
+        if (media_type in self.__media_types):
             media_types_items = dict(self.__media_types[media_type])
             return_value = media_types_items[self.ITEM_MEDIA_TYPES_EXTENSIONS]
             return return_value.split(self.get_config_file_delimiter())
@@ -103,37 +102,37 @@ class Configuration(ConfigurationParser):
             return []
 
     def get_media_type_destination_dir(self, media_type):
-        if (self.__media_types.has_key(media_type)):
+        if (media_type in self.__media_types):
             media_types_items = dict(self.__media_types[media_type])
             return media_types_items[self.ITEM_MEDIA_TYPES_DESTINATION_DIR]
         else:        
             return ""
     
     def get_media_type_module_name(self, media_type):
-        if (self.__media_types.has_key(media_type)):
+        if (media_type in self.__media_types):
             media_types_items = dict(self.__media_types[media_type])
             return media_types_items[self.ITEM_MEDIA_TYPES_MODULE_NAME]
         else:        
             return ""
     
     def get_media_type_module_class(self, media_type):
-        if (self.__media_types.has_key(media_type)):
+        if (media_type in self.__media_types):
             media_types_items = dict(self.__media_types[media_type])
             return media_types_items[self.ITEM_MEDIA_TYPES_MODULE_CLASS]
         else:        
             return ""
     
     def get_media_type_known_names_list(self, media_type):
-        if (self.__media_types.has_key(media_type)):
+        if (media_type in self.__media_types):
             media_types_items = dict(self.__media_types[media_type])
             return media_types_items[self.ITEM_MEDIA_TYPES_KNOWN_NAMES_FILE]
         else:        
             return ""
     
     def get_media_sub_type_extensions(self, media_type, media_sub_type):
-        if (self.__media_sub_types.has_key(media_type)):
+        if (media_type in self.__media_sub_types):
             sub_types_dict = self.__media_sub_types[media_type]
-            if (sub_types_dict.has_key(media_sub_type)):
+            if (media_sub_type in sub_types_dict):
                 media_sub_types_items = dict(sub_types_dict[media_sub_type])
                 return_value = media_sub_types_items[self.ITEM_MEDIA_TYPES_EXTENSIONS]
                 return return_value.split(self.get_config_file_delimiter())
@@ -143,9 +142,9 @@ class Configuration(ConfigurationParser):
             return []
 
     def get_media_sub_type_destination_dir(self, media_type, media_sub_type):
-        if (self.__media_sub_types.has_key(media_type)):
+        if (media_type in self.__media_sub_types):
             sub_types_dict = self.__media_sub_types[media_type]
-            if (sub_types_dict.has_key(media_sub_type)):
+            if (media_sub_type in sub_types_dict):
                 media_sub_types_items = dict(sub_types_dict[media_sub_type])
                 return media_sub_types_items[self.ITEM_MEDIA_TYPES_DESTINATION_DIR]
             else:
@@ -154,9 +153,9 @@ class Configuration(ConfigurationParser):
             return ""
     
     def get_media_sub_type_module_name(self, media_type, media_sub_type):
-        if (self.__media_sub_types.has_key(media_type)):
+        if (media_type in self.__media_sub_types):
             sub_types_dict = self.__media_sub_types[media_type]
-            if (sub_types_dict.has_key(media_sub_type)):
+            if (media_sub_type in sub_types_dict):
                 media_sub_types_items = sub_types_dict[media_sub_type]
                 media_sub_types_items_dict =  dict(media_sub_types_items)
                 return media_sub_types_items_dict[self.ITEM_MEDIA_TYPES_MODULE_NAME]
@@ -166,9 +165,9 @@ class Configuration(ConfigurationParser):
             return ""
     
     def get_media_sub_type_module_class(self, media_type, media_sub_type):
-        if (self.__media_sub_types.has_key(media_type)):
+        if (media_type in self.__media_sub_types):
             sub_types_dict = self.__media_sub_types[media_type]
-            if (sub_types_dict.has_key(media_sub_type)):
+            if (media_sub_type in sub_types_dict):
                 media_sub_types_items = dict(sub_types_dict[media_sub_type])
                 return media_sub_types_items[self.ITEM_MEDIA_TYPES_MODULE_CLASS]
             else:
@@ -177,9 +176,9 @@ class Configuration(ConfigurationParser):
             return ""
     
     def get_media_sub_type_known_names_list(self, media_type, media_sub_type):
-        if (self.__media_sub_types.has_key(media_type)):
+        if (media_type in self.__media_sub_types):
             sub_types_dict = self.__media_sub_types[media_type]
-            if (sub_types_dict.has_key(media_sub_type)):
+            if (media_sub_type in sub_types_dict):
                 media_sub_types_items = dict(sub_types_dict[media_sub_type])
                 return media_sub_types_items[self.ITEM_MEDIA_TYPES_KNOWN_NAMES_FILE]
             else:
@@ -189,21 +188,21 @@ class Configuration(ConfigurationParser):
     
     
     def get_word_file_delimiter(self, word_file_name):
-        if (self.__word_files.has_key(word_file_name)):
+        if (word_file_name in self.__word_files):
             word_file_items = dict(self.__word_files[word_file_name])
             return word_file_items[self.ITEM_WORD_FILE_DELIMITER]
         else:        
             return "" 
         
     def get_word_file_file_name(self, word_file_name):
-        if (self.__word_files.has_key(word_file_name)):
+        if (word_file_name in self.__word_files):
             word_file_items = dict(self.__word_files[word_file_name])
             return word_file_items[self.ITEM_WORD_FILE_FILE_NAME]
         else:        
             return "" 
     
     def get_word_absolute_file_file_name(self, word_file_name):
-        if (self.__word_files.has_key(word_file_name)):
+        if (word_file_name in self.__word_files):
             word_file_items = dict(self.__word_files[word_file_name])
             return_value = self.get_data_directory() + os.path.sep + word_file_items[self.ITEM_WORD_FILE_FILE_NAME]
             return return_value
@@ -211,14 +210,14 @@ class Configuration(ConfigurationParser):
             return "" 
 
     def get_word_file_file_class(self, word_file_name):
-        if (self.__word_files.has_key(word_file_name)):
+        if (word_file_name in self.__word_files):
             word_file_items = dict(self.__word_files[word_file_name])
             return word_file_items[self.ITEM_WORD_FILE_CLASS]
         else:        
             return "" 
     
     def get_word_file_module_name(self, word_file_name):
-        if (self.__word_files.has_key(word_file_name)):
+        if (word_file_name in self.__word_files):
             word_file_items = dict(self.__word_files[word_file_name])
             return word_file_items[self.ITEM_WORD_MODULE_NAME]
         else:        

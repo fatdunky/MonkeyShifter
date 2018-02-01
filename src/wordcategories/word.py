@@ -4,8 +4,8 @@ Created on 20Nov.,2016
 @author: fatdunky
 '''
 
-from lines.wordcategories.word_category import WordCategory
-from lines.wordcategories.unmatched_word_category import UnmatchedWordCategory
+from wordcategories.word_category import WordCategory
+from wordcategories.unmatched_word_category import UnmatchedWordCategory
 
 class Word(object):
     '''

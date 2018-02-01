@@ -3,7 +3,6 @@ Created on 5Mar.,2017
 
 @author: fatdunky
 '''
-from lines.line import Line
 
 class Media(object):
     '''
@@ -11,7 +10,6 @@ class Media(object):
     '''
     
     
-
     def __init__(self):
         '''
         Constructor
