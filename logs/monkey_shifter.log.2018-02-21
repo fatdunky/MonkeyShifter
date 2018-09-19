@@ -1,0 +1,363 @@
+20180221|21:15:06|root|INFO|Load word files
+20180221|21:15:06|root|DEBUG|Loading technical_words
+20180221|21:15:06|root|DEBUG|Loading technical_words
+20180221|21:15:06|root|DEBUG|Loading class : lines.wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:17:14|root|INFO|Load word files
+20180221|21:17:14|root|DEBUG|Loading technical_words
+20180221|21:17:14|root|DEBUG|Loading technical_words
+20180221|21:17:14|root|DEBUG|Loading class : lines.wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:24:26|root|INFO|Load word files
+20180221|21:24:26|root|DEBUG|Loading technical_words
+20180221|21:24:26|root|DEBUG|Loading technical_words
+20180221|21:24:26|root|DEBUG|Loading class : wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:24:26|root|DEBUG|Setting file name : ../data/technical_words.data in TechnicalWordCategory
+20180221|21:24:26|root|DEBUG|Setting class name : TechnicalWordCategory in TechnicalWordCategory
+20180221|21:24:26|root|DEBUG|Setting delimiter : | in TechnicalWordCategory
+20180221|21:24:26|root|DEBUG|Setting config_name : technical_words in TechnicalWordCategory
+20180221|21:24:26|root|DEBUG|Loading word file: TechnicalWordCategory
+20180221|21:26:46|root|INFO|Load word files
+20180221|21:26:46|root|DEBUG|Loading technical_words
+20180221|21:26:46|root|DEBUG|Loading technical_words
+20180221|21:26:46|root|DEBUG|Loading class : wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:26:46|root|DEBUG|Setting file name : ../data/technical_words.data in TechnicalWordCategory
+20180221|21:26:46|root|DEBUG|Setting class name : TechnicalWordCategory in TechnicalWordCategory
+20180221|21:26:46|root|DEBUG|Setting delimiter : | in TechnicalWordCategory
+20180221|21:26:46|root|DEBUG|Setting config_name : technical_words in TechnicalWordCategory
+20180221|21:26:46|root|DEBUG|Loading word file: TechnicalWordCategory
+20180221|21:26:46|root|DEBUG|Loading common_words
+20180221|21:26:46|root|DEBUG|Loading common_words
+20180221|21:26:46|root|DEBUG|Loading class : wordcategories.common_word_category.CommonWordCategory
+20180221|21:26:46|root|DEBUG|Setting file name : ../data/common_words.data in CommonWordCategory
+20180221|21:26:46|root|DEBUG|Setting class name : CommonWordCategory in CommonWordCategory
+20180221|21:26:46|root|DEBUG|Setting delimiter : | in CommonWordCategory
+20180221|21:26:46|root|DEBUG|Setting config_name : common_words in CommonWordCategory
+20180221|21:26:46|root|DEBUG|Loading word file: CommonWordCategory
+20180221|21:26:46|root|DEBUG|Loading scene_words
+20180221|21:26:46|root|DEBUG|Loading scene_words
+20180221|21:26:46|root|DEBUG|Loading class : wordcategories.scene_word_category.SceneWordCategory
+20180221|21:26:46|root|DEBUG|Setting file name : ../data/scene_words.data in SceneWordCategory
+20180221|21:26:46|root|DEBUG|Setting class name : SceneWordCategory in SceneWordCategory
+20180221|21:26:46|root|DEBUG|Setting delimiter : | in SceneWordCategory
+20180221|21:26:46|root|DEBUG|Setting config_name : scene_words in SceneWordCategory
+20180221|21:26:46|root|DEBUG|Loading word file: SceneWordCategory
+20180221|21:26:46|root|INFO|Load media_types
+20180221|21:26:46|root|DEBUG|Loading applications
+20180221|21:26:46|root|DEBUG|Loading class : mediatypes.applications_media_type.ApplicationsMediaType
+20180221|21:30:09|root|INFO|Load word files
+20180221|21:30:09|root|DEBUG|Loading technical_words
+20180221|21:30:09|root|DEBUG|Loading technical_words
+20180221|21:30:09|root|DEBUG|Loading class : wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:30:09|root|DEBUG|Setting file name : ../data/technical_words.data in TechnicalWordCategory
+20180221|21:30:09|root|DEBUG|Setting class name : TechnicalWordCategory in TechnicalWordCategory
+20180221|21:30:09|root|DEBUG|Setting delimiter : | in TechnicalWordCategory
+20180221|21:30:09|root|DEBUG|Setting config_name : technical_words in TechnicalWordCategory
+20180221|21:30:09|root|DEBUG|Loading word file: TechnicalWordCategory
+20180221|21:30:09|root|DEBUG|Loading common_words
+20180221|21:30:09|root|DEBUG|Loading common_words
+20180221|21:30:09|root|DEBUG|Loading class : wordcategories.common_word_category.CommonWordCategory
+20180221|21:30:09|root|DEBUG|Setting file name : ../data/common_words.data in CommonWordCategory
+20180221|21:30:09|root|DEBUG|Setting class name : CommonWordCategory in CommonWordCategory
+20180221|21:30:09|root|DEBUG|Setting delimiter : | in CommonWordCategory
+20180221|21:30:09|root|DEBUG|Setting config_name : common_words in CommonWordCategory
+20180221|21:30:09|root|DEBUG|Loading word file: CommonWordCategory
+20180221|21:30:09|root|DEBUG|Loading scene_words
+20180221|21:30:09|root|DEBUG|Loading scene_words
+20180221|21:30:09|root|DEBUG|Loading class : wordcategories.scene_word_category.SceneWordCategory
+20180221|21:30:09|root|DEBUG|Setting file name : ../data/scene_words.data in SceneWordCategory
+20180221|21:30:09|root|DEBUG|Setting class name : SceneWordCategory in SceneWordCategory
+20180221|21:30:09|root|DEBUG|Setting delimiter : | in SceneWordCategory
+20180221|21:30:09|root|DEBUG|Setting config_name : scene_words in SceneWordCategory
+20180221|21:30:09|root|DEBUG|Loading word file: SceneWordCategory
+20180221|21:30:09|root|INFO|Load media_types
+20180221|21:30:09|root|DEBUG|Loading applications
+20180221|21:30:09|root|DEBUG|Loading class : mediatypes.applications_media_type.ApplicationsMediaType
+20180221|21:31:05|root|INFO|Load word files
+20180221|21:31:05|root|DEBUG|Loading technical_words
+20180221|21:31:05|root|DEBUG|Loading technical_words
+20180221|21:31:05|root|DEBUG|Loading class : wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:31:05|root|DEBUG|Setting file name : ../data/technical_words.data in TechnicalWordCategory
+20180221|21:31:05|root|DEBUG|Setting class name : TechnicalWordCategory in TechnicalWordCategory
+20180221|21:31:05|root|DEBUG|Setting delimiter : | in TechnicalWordCategory
+20180221|21:31:05|root|DEBUG|Setting config_name : technical_words in TechnicalWordCategory
+20180221|21:31:05|root|DEBUG|Loading word file: TechnicalWordCategory
+20180221|21:31:05|root|DEBUG|Loading common_words
+20180221|21:31:05|root|DEBUG|Loading common_words
+20180221|21:31:05|root|DEBUG|Loading class : wordcategories.common_word_category.CommonWordCategory
+20180221|21:31:05|root|DEBUG|Setting file name : ../data/common_words.data in CommonWordCategory
+20180221|21:31:05|root|DEBUG|Setting class name : CommonWordCategory in CommonWordCategory
+20180221|21:31:05|root|DEBUG|Setting delimiter : | in CommonWordCategory
+20180221|21:31:05|root|DEBUG|Setting config_name : common_words in CommonWordCategory
+20180221|21:31:05|root|DEBUG|Loading word file: CommonWordCategory
+20180221|21:31:05|root|DEBUG|Loading scene_words
+20180221|21:31:05|root|DEBUG|Loading scene_words
+20180221|21:31:05|root|DEBUG|Loading class : wordcategories.scene_word_category.SceneWordCategory
+20180221|21:31:05|root|DEBUG|Setting file name : ../data/scene_words.data in SceneWordCategory
+20180221|21:31:05|root|DEBUG|Setting class name : SceneWordCategory in SceneWordCategory
+20180221|21:31:05|root|DEBUG|Setting delimiter : | in SceneWordCategory
+20180221|21:31:05|root|DEBUG|Setting config_name : scene_words in SceneWordCategory
+20180221|21:31:05|root|DEBUG|Loading word file: SceneWordCategory
+20180221|21:31:05|root|INFO|Load media_types
+20180221|21:31:05|root|DEBUG|Loading applications
+20180221|21:31:05|root|DEBUG|Loading class : mediatypes.applications_media_type.ApplicationsMediaType
+20180221|21:31:05|root|DEBUG|Loading media type(applications) extensions [u'iso', u'nfo', u'bin']
+20180221|21:31:05|root|DEBUG|Loading media type(applications) destinations directory /media/entertainment/apps/
+20180221|21:31:05|root|DEBUG|Loading media type(applications) known_names_list application_names.data
+20180221|21:31:05|root|INFO|Load media sub types
+20180221|21:31:05|root|DEBUG|Loading books
+20180221|21:31:05|root|DEBUG|Loading class : mediatypes.books_media_type.BooksMediaType
+20180221|21:31:05|root|DEBUG|Loading media type(books) extensions [u'pdf', u'epub']
+20180221|21:31:05|root|DEBUG|Loading media type(books) destinations directory /media/entertainment/books/
+20180221|21:31:05|root|DEBUG|Loading media type(books) known_names_list book_names.data
+20180221|21:31:05|root|INFO|Load media sub types
+20180221|21:31:05|root|DEBUG|Loading videos
+20180221|21:31:05|root|DEBUG|Loading class : mediatypes.videos_media_type.VideosMediaType
+20180221|21:31:05|root|DEBUG|Loading media type(videos) extensions [u'avi', u'mp4', u'mkv']
+20180221|21:31:05|root|DEBUG|Loading media type(videos) destinations directory 
+20180221|21:31:05|root|DEBUG|Loading media type(videos) known_names_list 
+20180221|21:31:05|root|INFO|Load media sub types
+20180221|21:31:05|root|DEBUG|Loading videos - movies
+20180221|21:31:05|root|DEBUG|Loading subtype class : mediatypes.movies_media_sub_type.MoviesMediaSubType
+20180221|21:31:05|root|DEBUG|Loading media sub type(videos - movies) destinations directory 
+20180221|21:31:05|root|DEBUG|Loading media sub type(videos - movies) known_names_list movies_names.data
+20180221|21:31:05|root|DEBUG|Loading videos - tv_shows
+20180221|21:31:05|root|DEBUG|Loading subtype class : mediatypes.tv_shows_media_sub_type.TvShowsMediaSubType
+20180221|21:31:05|root|DEBUG|Loading media sub type(videos - tv_shows) destinations directory 
+20180221|21:31:05|root|DEBUG|Loading media sub type(videos - tv_shows) known_names_list tv_show_names.data
+20180221|21:31:05|root|DEBUG|Loading audios
+20180221|21:31:05|root|DEBUG|Loading class : mediatypes.audios_media_type.AudiosMediaType
+20180221|21:31:05|root|DEBUG|Loading media type(audios) extensions [u'mp3', u'wav']
+20180221|21:31:05|root|DEBUG|Loading media type(audios) destinations directory 
+20180221|21:31:05|root|DEBUG|Loading media type(audios) known_names_list audio_names.data
+20180221|21:31:05|root|INFO|Load media sub types
+20180221|21:31:05|root|INFO|Load target list of file names in /media/storage/eclipse-workspace/MonkeyShifter/src
+20180221|21:31:05|root|INFO|Found 9 file names
+20180221|21:31:05|root|INFO|Tuning mode enabled. Processing all unmatched words
+20180221|21:43:44|root|INFO|Load word files
+20180221|21:43:44|root|DEBUG|Loading technical_words
+20180221|21:43:44|root|DEBUG|Loading technical_words
+20180221|21:43:44|root|DEBUG|Loading class : wordcategories.technical_word_category.TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Setting file name : ../data/technical_words.data in TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Setting class name : TechnicalWordCategory in TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Setting delimiter : | in TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Setting config_name : technical_words in TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Loading word file: TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Loading common_words
+20180221|21:43:44|root|DEBUG|Loading common_words
+20180221|21:43:44|root|DEBUG|Loading class : wordcategories.common_word_category.CommonWordCategory
+20180221|21:43:44|root|DEBUG|Setting file name : ../data/common_words.data in CommonWordCategory
+20180221|21:43:44|root|DEBUG|Setting class name : CommonWordCategory in CommonWordCategory
+20180221|21:43:44|root|DEBUG|Setting delimiter : | in CommonWordCategory
+20180221|21:43:44|root|DEBUG|Setting config_name : common_words in CommonWordCategory
+20180221|21:43:44|root|DEBUG|Loading word file: CommonWordCategory
+20180221|21:43:44|root|DEBUG|Loading scene_words
+20180221|21:43:44|root|DEBUG|Loading scene_words
+20180221|21:43:44|root|DEBUG|Loading class : wordcategories.scene_word_category.SceneWordCategory
+20180221|21:43:44|root|DEBUG|Setting file name : ../data/scene_words.data in SceneWordCategory
+20180221|21:43:44|root|DEBUG|Setting class name : SceneWordCategory in SceneWordCategory
+20180221|21:43:44|root|DEBUG|Setting delimiter : | in SceneWordCategory
+20180221|21:43:44|root|DEBUG|Setting config_name : scene_words in SceneWordCategory
+20180221|21:43:44|root|DEBUG|Loading word file: SceneWordCategory
+20180221|21:43:44|root|INFO|Load media_types
+20180221|21:43:44|root|DEBUG|Loading applications
+20180221|21:43:44|root|DEBUG|Loading class : mediatypes.applications_media_type.ApplicationsMediaType
+20180221|21:43:44|root|DEBUG|Loading media type(applications) extensions [u'iso', u'nfo', u'bin']
+20180221|21:43:44|root|DEBUG|Loading media type(applications) destinations directory /media/entertainment/apps/
+20180221|21:43:44|root|DEBUG|Loading media type(applications) known_names_list application_names.data
+20180221|21:43:44|root|INFO|Load media sub types
+20180221|21:43:44|root|DEBUG|Loading books
+20180221|21:43:44|root|DEBUG|Loading class : mediatypes.books_media_type.BooksMediaType
+20180221|21:43:44|root|DEBUG|Loading media type(books) extensions [u'pdf', u'epub']
+20180221|21:43:44|root|DEBUG|Loading media type(books) destinations directory /media/entertainment/books/
+20180221|21:43:44|root|DEBUG|Loading media type(books) known_names_list book_names.data
+20180221|21:43:44|root|INFO|Load media sub types
+20180221|21:43:44|root|DEBUG|Loading videos
+20180221|21:43:44|root|DEBUG|Loading class : mediatypes.videos_media_type.VideosMediaType
+20180221|21:43:44|root|DEBUG|Loading media type(videos) extensions [u'avi', u'mp4', u'mkv']
+20180221|21:43:44|root|DEBUG|Loading media type(videos) destinations directory 
+20180221|21:43:44|root|DEBUG|Loading media type(videos) known_names_list 
+20180221|21:43:44|root|INFO|Load media sub types
+20180221|21:43:44|root|DEBUG|Loading videos - movies
+20180221|21:43:44|root|DEBUG|Loading subtype class : mediatypes.movies_media_sub_type.MoviesMediaSubType
+20180221|21:43:44|root|DEBUG|Loading media sub type(videos - movies) destinations directory 
+20180221|21:43:44|root|DEBUG|Loading media sub type(videos - movies) known_names_list movies_names.data
+20180221|21:43:44|root|DEBUG|Loading videos - tv_shows
+20180221|21:43:44|root|DEBUG|Loading subtype class : mediatypes.tv_shows_media_sub_type.TvShowsMediaSubType
+20180221|21:43:44|root|DEBUG|Loading media sub type(videos - tv_shows) destinations directory 
+20180221|21:43:44|root|DEBUG|Loading media sub type(videos - tv_shows) known_names_list tv_show_names.data
+20180221|21:43:44|root|DEBUG|Loading audios
+20180221|21:43:44|root|DEBUG|Loading class : mediatypes.audios_media_type.AudiosMediaType
+20180221|21:43:44|root|DEBUG|Loading media type(audios) extensions [u'mp3', u'wav']
+20180221|21:43:44|root|DEBUG|Loading media type(audios) destinations directory 
+20180221|21:43:44|root|DEBUG|Loading media type(audios) known_names_list audio_names.data
+20180221|21:43:44|root|INFO|Load media sub types
+20180221|21:43:44|root|INFO|Load target list of file names in /media/storage/eclipse-workspace/MonkeyShifter/src
+20180221|21:43:44|root|INFO|Found 9 file names
+20180221|21:43:44|root|INFO|Parse file names
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [cmd (UnmatchedWordCategory), lin (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension cmd_line
+20180221|21:43:44|root|DEBUG|Got Word Count 2
+20180221|21:43:44|root|DEBUG|Got File Name cmd_line
+20180221|21:43:44|root|DEBUG|Adding directory: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/cmd_line
+20180221|21:43:44|root|DEBUG|Got Path cmd_line
+20180221|21:43:44|root|DEBUG|Got Size 4096
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [ (UnmatchedWordCategory),  (UnmatchedWordCategory), pycache (UnmatchedWordCategory),  (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension __pycache__
+20180221|21:43:44|root|DEBUG|Got Word Count 4
+20180221|21:43:44|root|DEBUG|Got File Name __pycache__
+20180221|21:43:44|root|DEBUG|Adding directory: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/__pycache__
+20180221|21:43:44|root|DEBUG|Got Path __pycache__
+20180221|21:43:44|root|DEBUG|Got Size 4096
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [line (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension lines
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name lines
+20180221|21:43:44|root|DEBUG|Adding directory: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/lines
+20180221|21:43:44|root|DEBUG|Got Path lines
+20180221|21:43:44|root|DEBUG|Got Size 4096
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [configuration (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension pyc
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name configuration.pyc
+20180221|21:43:44|root|DEBUG|Line is file: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/configuration.pyc
+20180221|21:43:44|root|DEBUG|Got Path configuration.pyc
+20180221|21:43:44|root|DEBUG|Got Size 14372
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [utilite (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension utilites
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name utilites
+20180221|21:43:44|root|DEBUG|Adding directory: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/utilites
+20180221|21:43:44|root|DEBUG|Got Path utilites
+20180221|21:43:44|root|DEBUG|Got Size 4096
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [mediatype (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension mediatypes
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name mediatypes
+20180221|21:43:44|root|DEBUG|Adding directory: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/mediatypes
+20180221|21:43:44|root|DEBUG|Got Path mediatypes
+20180221|21:43:44|root|DEBUG|Got Size 4096
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [configuration (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension py
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name configuration.py
+20180221|21:43:44|root|DEBUG|Line is file: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/configuration.py
+20180221|21:43:44|root|DEBUG|Got Path configuration.py
+20180221|21:43:44|root|DEBUG|Got Size 12663
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [wordcategorie (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension wordcategories
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name wordcategories
+20180221|21:43:44|root|DEBUG|Adding directory: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/wordcategories
+20180221|21:43:44|root|DEBUG|Got Path wordcategories
+20180221|21:43:44|root|DEBUG|Got Size 4096
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|INFO|Create Media Object
+20180221|21:43:44|root|DEBUG|wordCategory: technical_words
+20180221|21:43:44|root|DEBUG|wordCategory: common_words
+20180221|21:43:44|root|DEBUG|wordCategory: scene_words
+20180221|21:43:44|root|DEBUG|Split line into [monkeyshifter (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|Got File Extension py
+20180221|21:43:44|root|DEBUG|Got Word Count 1
+20180221|21:43:44|root|DEBUG|Got File Name monkeyshifter.py
+20180221|21:43:44|root|DEBUG|Line is file: Got Absolute File Name /media/storage/eclipse-workspace/MonkeyShifter/src/monkeyshifter.py
+20180221|21:43:44|root|DEBUG|Got Path monkeyshifter.py
+20180221|21:43:44|root|DEBUG|Got Size 14635
+20180221|21:43:44|root|INFO|Finished Creating Media Object
+20180221|21:43:44|root|DEBUG|[cmd (UnmatchedWordCategory), lin (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[ (UnmatchedWordCategory),  (UnmatchedWordCategory), pycache (UnmatchedWordCategory),  (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[line (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[configuration (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[utilite (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[mediatype (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[configuration (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[wordcategorie (UnmatchedWordCategory)]
+20180221|21:43:44|root|DEBUG|[monkeyshifter (UnmatchedWordCategory)]
+20180221|21:43:44|root|INFO|Tuning mode enabled. Processing all unmatched words
+20180221|21:43:44|root|DEBUG|Found the following wordCategory for choices: UnmatchedWordCategory
+20180221|21:43:44|root|DEBUG|Setting shortcut char: U for word category: UnmatchedWordCategory
+20180221|21:43:44|root|DEBUG|Adding directory do_U to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Adding directory do_UnmatchedWordCategory to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Found the following wordCategory for choices: TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Setting shortcut char: T for word category: TechnicalWordCategory
+20180221|21:43:44|root|DEBUG|Adding directory do_T to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Adding directory do_TechnicalWordCategory to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Found the following wordCategory for choices: CommonWordCategory
+20180221|21:43:44|root|DEBUG|Setting shortcut char: C for word category: CommonWordCategory
+20180221|21:43:44|root|DEBUG|Adding directory do_C to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Adding directory do_CommonWordCategory to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Found the following wordCategory for choices: SceneWordCategory
+20180221|21:43:44|root|DEBUG|Setting shortcut char: S for word category: SceneWordCategory
+20180221|21:43:44|root|DEBUG|Adding directory do_S to WordCategoryCmd
+20180221|21:43:44|root|DEBUG|Adding directory do_SceneWordCategory to WordCategoryCmd
+20180221|21:43:44|root|INFO|===============================================
+20180221|21:43:44|root|INFO|The following line has unmatched words:
+20180221|21:43:44|root|INFO|'configuration.py'
+20180221|21:43:44|root|INFO|-----------------------------------------------
+20180221|21:43:44|root|INFO|========[configuration], current category=(UnmatchedWordCategory)
+20180221|21:43:44|root|INFO|Choose a word category for word [configuration], current category=(UnmatchedWordCategory)
+20180221|21:43:44|root|INFO|-----------------------------------------------
+20180221|21:44:17|root|INFO|===============================================
+20180221|21:44:17|root|INFO|The following line has unmatched words:
+20180221|21:44:17|root|INFO|'configuration.py'
+20180221|21:44:17|root|INFO|-----------------------------------------------
+20180221|21:44:17|root|INFO|========[configuration], current category=(UnmatchedWordCategory)
+20180221|21:44:17|root|INFO|Choose a word category for word [configuration], current category=(UnmatchedWordCategory)
+20180221|21:44:17|root|INFO|-----------------------------------------------
+20180221|21:44:20|root|INFO|===============================================
+20180221|21:44:20|root|INFO|The following line has unmatched words:
+20180221|21:44:20|root|INFO|'configuration.py'
+20180221|21:44:20|root|INFO|-----------------------------------------------
+20180221|21:44:20|root|INFO|========[configuration], current category=(UnmatchedWordCategory)
+20180221|21:44:20|root|INFO|Choose a word category for word [configuration], current category=(UnmatchedWordCategory)
+20180221|21:44:20|root|INFO|-----------------------------------------------
+20180221|21:44:20|root|DEBUG|Setting configuration (TechnicalWordCategory) to word category: TechnicalWordCategory
