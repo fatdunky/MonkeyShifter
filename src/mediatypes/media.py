@@ -106,6 +106,9 @@ class Media(object):
     def del_word_count(self):
         del self.__wordCount
 
+    def __str__(self):
+        return "fileName: {}, fileExt: {}, mediaType: {}, wordCount: {}".format(self.__fileName, self.__fileExtension, self.__mediaType, self.__wordCount )
+
     absolute_file_name = property(get_absolute_file_name, set_absolute_file_name, del_absolute_file_name, "absoluteFileName's docstring")
     size = property(get_size, set_size, del_size, "size's docstring")
     file_name = property(get_file_name, set_file_name, del_file_name, "fileName's docstring")

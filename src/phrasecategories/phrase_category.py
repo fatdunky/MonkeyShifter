@@ -3,27 +3,27 @@ Created on 23Nov.,2016
 
 @author: fatdunky
 '''
-from utilites.io import *
+from lines.utilites.io import Io
 import logging
 
 
-class WordCategory(object):
+class PhraseCategory(object):
     '''
-    This class is the super class of the word categories
+    This class is the super class of the phrase categories
     '''
-    #List of Maps that contain the word class in each category
-    wordCategories = {}
+    #List of Maps that contain the phrase class in each category
+    phraseCategories = {}
 
     @staticmethod
-    def match_word_category(text):
+    def match_phrase_category(text):
         '''
-        Match the word to a correct word category
+        Match the phrase to a correct phrase category
         '''
         
-        for wordCategory in WordCategory.wordCategories:
-            logging.debug("wordCategory: %s", wordCategory)
-            if WordCategory.wordCategories[wordCategory].is_match(text) :
-                return WordCategory.wordCategories[wordCategory]
+        for phraseCategory in PhraseCategory.phraseCategories:
+            logging.debug("phraseCategory: %s", phraseCategory)
+            if PhraseCategory.phraseCategories[phraseCategory].is_match(text) :
+                return PhraseCategory.phraseCategories[phraseCategory]
         
         return None   
         
@@ -36,13 +36,13 @@ class WordCategory(object):
         self._file = ""
         self._class_var = ""
         self._config_name = ""
-        self._map_of_words = {}
+        self._map_of_phrases = {}
                     
     def get_delimiter(self):
         return self._delimiter
 
-    def is_match(self, wordText):
-        if wordText in self._map_of_words:
+    def is_match(self, phraseText):
+        if phraseText in self._map_of_phrases:
             return True
         else:
             return False
@@ -57,8 +57,8 @@ class WordCategory(object):
     def get_class_var(self):
         return self._class_var
     
-    def get_map_of_words(self):
-        return self._map_of_words
+    def get_map_of_phrases(self):
+        return self._map_of_phrases
 
 
     def set_delimiter(self, value):
@@ -88,31 +88,28 @@ class WordCategory(object):
     def del_class_var(self):
         del self._class_var
     
-    def add_new_word(self, word):
-        if word not in self._map_of_words:
-            self._map_of_words[word] = word
+    def add_new_phrase(self, phrase):
+        if not phrase in self._map_of_phrases:
+            self._map_of_phrases[phrase] = phrase
         else:
-            logging.warn("Word [%s] allready existing in category [%s]", word, self.__class__.__name__)
+            logging.warn("Phrase [%s] allready existing in category [%s]", phrase, self.__class__.__name__)
     
     def load_file(self):
         file_lines = []
         try:
-            file_lines = read_gz_file(self._file)
+            file_lines = Io.read_gz_file(self._file)
         except (OSError, IOError) as e:
             #assuming its file not found
-            write_gz_file("\n", self._file)
+            Io.write_gz_file("\n", self._file)
             
         for line in file_lines:
-            self._map_of_words[line.rstrip()] = line.rstrip()
+            self._map_of_phrases[line] = line
     
     def save_file(self):
         try:
-            write_gz_file(list(self._map_of_words.values()),self._file)
+            Io.write_gz_file(self._map_of_phrases.values(),self._file)
         except (OSError, IOError) as e:
             logging.error("exception writting to file: %s, %s", self._file, e)
-
-    def __str__(self):
-        return "{}: {}".format(self._config_name, self._map_of_words)
 
             
     config_name = property(get_config_name, set_config_name, del_config_name , "config_name's docstring")

@@ -5,9 +5,9 @@ Created on 23Nov.,2016
 '''
 from .word_category import WordCategory
 
-class CommonWordCategory(WordCategory):
+class SeasonEpisodeWordCategory(WordCategory):
     '''
-    This class defines a word as a common word i.e "a, the, because"
+    This class defines a tv season an episode i.e "S02E01"
     '''
 
 
@@ -15,8 +15,9 @@ class CommonWordCategory(WordCategory):
         '''
         Constructor
         '''
-        super(CommonWordCategory,self).__init__()
+        super(SeasonEpisodeWordCategory,self).__init__()
     
 
     def heuristic_match(self):
         pass
+        

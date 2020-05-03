@@ -315,7 +315,10 @@ def main(argv):
     if (console_mode == False): console_mode = bool(config.get_log_console_mode())
     if (log_file == ""): log_file = config.get_log_file()
     if (log_level == ""): log_level = config.get_log_level()
-    setup_logging(console_mode,log_file,log_directory, log_level, base_folder)
+    #def setup_logging(console_mode,log_file,log_directory, log_level, rotate_mode,
+    # when, interval, backup_count, rotate_bytes):
+
+    setup_logging(console_mode,log_file,log_directory, log_level, None, None, None, None, None)
 
     line_delimeters = config.get_file_name_delimiters()
 
@@ -354,10 +357,10 @@ def main(argv):
 
     #logging.debug("done, newMatchedwords=[%s]",unmatched_words_map)
 
-    for key, list in list(unmatched_words_map.items()):
+    for key, value_list in list(unmatched_words_map.items()):
         #logging.debug("Word word [%s], list [%s]", key, list)
-        for word in list:
-            logging.debug("Adding [%s] to word list %s", word.get_text(),word.get_category().get_config_name())
+        for word in value_list:
+            logging.debug("Adding [%s] to word list, category [%s]", word.get_text(),word.get_category().get_config_name())
             #word.get_category().add_new_word(word.get_text)
             #existing_list = word_files[word.get_category().get_config_name()]
             #existing_list.append(word.get_text)
@@ -365,12 +368,11 @@ def main(argv):
     logging.debug("%s", word_files)
     for word_category_name, word_category in list(word_files.items()):
         logging.debug("%s wordCat [%s]", word_category ,word_category_name)
+    
+  
+    for line in split_lines:
+        logging.debug("split_lines [%s]", line)
 
-
-
-
-
-    #Do tunning
     #add word diff score
 
 
